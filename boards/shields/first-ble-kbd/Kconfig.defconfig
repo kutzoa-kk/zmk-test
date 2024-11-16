@@ -1,0 +1,6 @@
+if SHIELD_FIRST_BLE_KBD
+
+config ZMK_KEYBOARD_NAME
+    default "First BLE KBD"
+
+endif

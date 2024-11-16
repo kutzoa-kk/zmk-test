@@ -1,0 +1,2 @@
+config SHIELD_FIRST_BLE_KBD
+    def_bool $(shields_list_contains,first_ble_kbd)
