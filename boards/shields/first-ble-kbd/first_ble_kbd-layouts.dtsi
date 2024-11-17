@@ -1,6 +1,18 @@
+#include <physical_layouts.dtsi>
+
 / {
-    physical_layout0: physical_layout_0 {
+    macropad_layout: macropad_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Default Layout";
+        display-name = "Default";
+
+        kscan = <&kscan0>;
+        transform = <&macropad_transform>;
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100    0    0       0     0     0>
+            , <&key_physical_attrs 100 100  100    0       0     0     0>
+            , <&key_physical_attrs 100 100    0  100       0     0     0>
+            , <&key_physical_attrs 100 100  100  100       0     0     0>
+            ;
     };
 };
