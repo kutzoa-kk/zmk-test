@@ -18,4 +18,6 @@
 #
 ---
 include:
-  - shield: first_ble_kbd
+  - board: adafruit_feather_nrf52840
+    shield: first_ble_kbd
+    snippet: zmk-usb-logging
